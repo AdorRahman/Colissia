@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "Hurme Geometric Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Bold.eot?v=5987592811726524424");
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Bold.eot?%23iefix&v=5987592811726524424") format("embedded-opentype"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Bold.woff2?v=3336060285200365336") format("woff2"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Bold.woff?v=14108752841856287638") format("woff"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Bold.ttf?v=378094959298031297") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hurme Geometric Sans 3";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Light.eot?v=13412171481806879292");
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Light.eot?%23iefix&v=13412171481806879292") format("embedded-opentype"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Light.woff2?v=7230136714454597660") format("woff2"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Light.woff?v=1149009258578821902") format("woff"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Light.ttf?v=12074949343422740074") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hurme Geometric Sans 3";
+  font-style: oblique;
+  font-weight: 400;
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-RegularObl.eot?v=6071861605481420594");
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-RegularObl.eot?%23iefix&v=6071861605481420594") format("embedded-opentype"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-RegularObl.woff2?v=13544402796168102086") format("woff2"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-RegularObl.woff?v=13068614519192713285") format("woff"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-RegularObl.ttf?v=10555668372453182509") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hurme Geometric Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Regular.eot?v=2096041288814338933");
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Regular.eot?%23iefix&v=2096041288814338933") format("embedded-opentype"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Regular.woff2?v=9155111021059412008") format("woff2"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Regular.woff?v=8443179908484513550") format("woff"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-Regular.ttf?v=9956998637368964280") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hurme Geometric Sans 3";
+  font-style: oblique;
+  font-weight: 600;
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBoldObl.eot?v=13215748236483026404");
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBoldObl.eot?%23iefix&v=13215748236483026404") format("embedded-opentype"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBoldObl.woff2?v=13684195387186989901") format("woff2"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBoldObl.woff?v=11927989436260113675") format("woff"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBoldObl.ttf?v=3046053708235108006") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hurme Geometric Sans 3";
+  font-style: normal;
+  font-weight: 600;
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBold.eot?v=5211612150493135536");
+  src: url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBold.eot?%23iefix&v=5211612150493135536") format("embedded-opentype"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBold.woff2?v=17274716507235030455") format("woff2"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBold.woff?v=7152719647837587699") format("woff"),
+      url("//cdn.shopify.com/s/files/1/1104/4168/t/1172/assets/HurmeGeometricSans3-SemiBold.ttf?v=14896536772005740340") format("truetype");
+  font-display: swap;
+} */
+html{
+  scroll-behavior: smooth;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Jost",sans-serif;
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  background: #1B1E24;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.slick-dots .slick-active div{
+  background: #FFF !important;
+}
+.slick-best-sellers .slick-dots{
+  top:-48px;
+  text-align: right;
+  right:-8px;
+}
+.slick-top-rated .slick-dots{
+  top:-48px;
+  text-align: left;
+  right: -25px;
+}
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #FC2054 #181729;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #181729;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #FC2054;  background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, .2) 40%,rgba(255, 255, 255, .2) 60%,transparent 60%,transparent 80%, rgba(255, 255, 255, .2) 80%);
+  border-radius: 20px;
+  border: 2px solid #181729;
+}
+
+/* *::-webkit-scrollbar-thumb {
+  background-color: #FC2054;
+  border-radius: 20px;
+  border: 3px solid #181729;
+} */
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
+/* Banner images */
+.banner-image img{
+  filter: grayscale(100%);
+}
+.banner-image img:hover{
+  filter: grayscale(0%);
+}
+
+.product-image{
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='black' stroke-width='4' stroke-dasharray='18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.product-image1{
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='6' ry='6' stroke='black' stroke-width='2' stroke-dasharray='8%2c6' stroke-dashoffset='22' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.single-product-desc .se-image-container.__se__float-right{
+  padding-left: 50px;
+}
+
+.pagination li{
+  display: flex;
+  margin: 0.375rem;
+  border-width: 3px;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  border-radius: 9999px;
+  background: #FFF;
+  color: #000;
+}
+.pagination li:hover{
+  border-color: rgb(167, 139, 250)
+}
+.pagination li a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.pagination .previous, .pagination .next{
+  border: none;
+  background: transparent;
+  color: #FFF;
+  font-size: 1.25rem;
+}
+.pagination .previous:hover, .pagination .next:hover{
+  color: rgb(167, 139, 250)
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  /* height: 30px; */
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 15s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+/* Fix data-table */
+select + svg{
+  display: none !important;
+}
